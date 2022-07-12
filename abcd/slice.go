@@ -1,4 +1,4 @@
-package go_basics
+package abcd
 
 import "fmt"
 
@@ -27,4 +27,14 @@ func SliceLearn() {
 	}
 
 	// assignment is not possible like,  `array = slice`  OR `slice = array`
+
+	slice := []string{"a", "b", "c"}
+	var ns []*string
+	for idx, _ := range slice {
+		ns = append(ns, &slice[idx])
+	}
+
+	for _, s := range ns {
+		fmt.Println(*s)
+	}
 }
