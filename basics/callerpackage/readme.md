@@ -1,0 +1,1 @@
+As this package itself carries go.mod file & main(), don't call it from the main() of the root directory of this repo.
